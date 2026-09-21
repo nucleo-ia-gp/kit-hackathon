@@ -30,6 +30,7 @@ git clone <o-seu-repo> && cd <o-seu-repo>
 | `CHARTER.md` | os 7 itens do charter, com a tabela **`Está funcionando × Ainda não`** |
 | `FERRAMENTAS.md` | a declaração obrigatória, e as perguntas sobre o link publicado |
 | **`AGENTS.md`** | ⭐ instruções para a **IA de vocês**. Leia antes de usar qualquer assistente |
+| **`SEGURANCA.md`** | 🔴 **o que nunca entra num repositório público.** Leia antes do primeiro commit |
 | `.env.example` · `.gitignore` | o que nunca vai para um repositório público |
 | `scripts/checar-repo.sh` | confere licença, segredo, charter e ferramentas |
 
@@ -44,8 +45,9 @@ código e não executa. Isso derruba a nota em dois critérios de uma vez.
 
 ## ⚠️ Três coisas que custam caro e são fáceis de evitar
 
-1. **Segredo no histórico.** O repositório é público. Apagar o arquivo **não apaga o
-   histórico**. Rode o `checar-repo.sh` antes de cada push.
+1. 🔴 **Segredo no histórico.** O repositório é público, e **apagar o arquivo não apaga o
+   histórico**: a chave continua recuperável, para sempre. ⇒ Leia o **`SEGURANCA.md`** antes
+   do primeiro commit, e rode o `checar-repo.sh` antes de cada push.
 2. **Dado real de pessoa.** Se a organização parceira mandar planilha com nome, telefone ou
    prontuário, **não commite**. Gere versão sintética com a mesma estrutura.
 3. ⭐ **Link publicado com prazo de validade.** Alguns planos gratuitos derrubam o app
